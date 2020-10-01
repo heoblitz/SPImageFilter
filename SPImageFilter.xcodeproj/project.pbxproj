@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C141F0C2521D717004794AC /* SPImageFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C141F0A2521D717004794AC /* SPImageFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C141F152521D824004794AC /* SPImageFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C141F142521D824004794AC /* SPImageFilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3C141F072521D717004794AC /* SPImageFilter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SPImageFilter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C141F0A2521D717004794AC /* SPImageFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPImageFilter.h; sourceTree = "<group>"; };
 		3C141F0B2521D717004794AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C141F142521D824004794AC /* SPImageFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPImageFilter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +46,8 @@
 		3C141F092521D717004794AC /* SPImageFilter */ = {
 			isa = PBXGroup;
 			children = (
-				3C141F0A2521D717004794AC /* SPImageFilter.h */,
 				3C141F0B2521D717004794AC /* Info.plist */,
+				3C141F142521D824004794AC /* SPImageFilter.swift */,
 			);
 			path = SPImageFilter;
 			sourceTree = "<group>";
@@ -59,7 +59,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C141F0C2521D717004794AC /* SPImageFilter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +93,7 @@
 				TargetAttributes = {
 					3C141F062521D717004794AC = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -130,6 +130,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C141F152521D824004794AC /* SPImageFilter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +262,7 @@
 		3C141F102521D717004794AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HK54HM2TC6;
@@ -277,6 +279,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wonheo.SPImageFilter;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +288,7 @@
 		3C141F112521D717004794AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HK54HM2TC6;
