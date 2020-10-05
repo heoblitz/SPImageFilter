@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		3C141F152521D824004794AC /* SPImageFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C141F142521D824004794AC /* SPImageFilter.swift */; };
+		3CF515A2252B6201009C9F97 /* SPImageFilterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF515A1252B6201009C9F97 /* SPImageFilterType.swift */; };
+		3CF515A5252B6221009C9F97 /* SPImageContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF515A4252B6221009C9F97 /* SPImageContext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3C141F072521D717004794AC /* SPImageFilter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SPImageFilter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C141F0B2521D717004794AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C141F142521D824004794AC /* SPImageFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPImageFilter.swift; sourceTree = "<group>"; };
+		3CF515A1252B6201009C9F97 /* SPImageFilterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPImageFilterType.swift; sourceTree = "<group>"; };
+		3CF515A4252B6221009C9F97 /* SPImageContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPImageContext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,8 +52,11 @@
 			children = (
 				3C141F0B2521D717004794AC /* Info.plist */,
 				3C141F142521D824004794AC /* SPImageFilter.swift */,
+				3CF515A4252B6221009C9F97 /* SPImageContext.swift */,
+				3CF515A1252B6201009C9F97 /* SPImageFilterType.swift */,
 			);
-			path = SPImageFilter;
+			name = SPImageFilter;
+			path = Sources/SPImageFilter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CF515A2252B6201009C9F97 /* SPImageFilterType.swift in Sources */,
+				3CF515A5252B6221009C9F97 /* SPImageContext.swift in Sources */,
 				3C141F152521D824004794AC /* SPImageFilter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,7 +278,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SPImageFilter/Info.plist;
+				INFOPLIST_FILE = Sources/SPImageFilter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -295,7 +304,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SPImageFilter/Info.plist;
+				INFOPLIST_FILE = Sources/SPImageFilter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
