@@ -16,16 +16,21 @@ let image: UIImage = UIImage(name: "example")?.spFilter(type: .ciBoxBlur, option
     ]).output
 ```
 
+![](image/1_header.png)
+
 ## Filter Chaining
 ```swift
 let image: UIImage = UIImage(name: "example")?
-    .spFilter(type: .ciBoxBlur, options: [
-        "inputRadius" : 10
+    .spFilter(type: .ciSepiaTone, options: [
+        "inputIntensity" : 0.9
     ])
-    .spFilter(type: .ciGaussianBlur, options: [
-        "inputRadius" : 10
+    .spFilter(type: .ciBloom, options: [
+        "inputRadius" : 10,
+        "inputIntensity" : 2
     ]).output
 ```
+
+![](image/2_header.png)
 
 # Installation
 ## CocoaPods
